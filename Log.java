@@ -15,9 +15,9 @@ public class Log implements Runnable{
 		while(true){
 			try{
 				Thread.sleep(100);
-                if(queue.isEmpty() == false){
-                    System.out.println(queue.poll().GetData());
-                }
+				if(queue.isEmpty() == false){
+				    System.out.println(queue.poll().GetData());
+				}
 			}catch(InterruptedException e){
 				System.out.println(e);
 			}
